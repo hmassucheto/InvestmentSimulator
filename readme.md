@@ -53,8 +53,8 @@ Este README explica como fazer:
 - **docker-compose.yml**: para orquestrar o container único  
 - **InvestmentSimulator.Api**: projeto backend (.NET 8.0)  
 - **InvestmentSimulator.Web**: projeto frontend (Angular)
-- **InvestmentSimulator.Domain**: regras de negócio backend (Angular)
-- **InvestmentSimulator.Tests**: projeto de testes (Angular)
+- **InvestmentSimulator.Domain**: regras de negócio backend (.NET 8.0)  
+- **InvestmentSimulator.Tests**: projeto de testes (.NET 8.0)  
 
 ---
 
@@ -74,7 +74,7 @@ Este README explica como fazer:
    http://localhost:5000
 
 
-Pronto! Seu backend .NET e seu frontend Angular estarão rodando juntos em um único container.
+Pronto! Backend .NET e frontend Angular rodando juntos em um único container.
 
 ---
 
