@@ -32,7 +32,7 @@ Este README explica como fazer:
 ---
 
 ## Estrutura de pastas
-/
+
 ```
 ├── Dockerfile
 ├── docker-compose.yml
