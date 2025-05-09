@@ -1,0 +1,38 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-grid">
+
+  <div class="form-group">
+    <label for="initialValue">Valor Inicial</label>
+    <input
+      id="initialValue"
+      type="text"
+      formControlName="initialValue"
+      maxlength="15"
+      mask="separator.2"
+      thousandSeparator="."
+      decimalMarker=","
+      prefix="R$ "
+    />
+    <div class="error" *ngIf="form.get('initialValue')?.touched && form.get('initialValue')?.invalid">
+      <small *ngIf="form.get('initialValue')?.errors?.['required']">Valor obrigatório</small>
+      <small *ngIf="form.get('initialValue')?.hasError('pattern')">Digite um valor maior que zero</small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="months">Meses</label>
+    <input id="months" type="number" formControlName="months" />
+    <div class="error" *ngIf="form.get('months')?.touched && form.get('months')?.invalid">
+      <small *ngIf="form.get('months')?.errors?.['required']">Campo obrigatório</small>
+      <small *ngIf="form.get('months')?.errors?.['min']">Mínimo de 2 meses</small>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Simular</button>
+</form>
+
+<div class="error" *ngIf="error">{{ error }}</div>
+
+<div class="result" *ngIf="result">
+  <p><strong>Valor Bruto:</strong> {{ result.grossAmount | currency:'BRL' }}</p>
+  <p><strong>Valor Líquido:</strong> {{ result.netAmount | currency:'BRL' }}</p>
+</div>
