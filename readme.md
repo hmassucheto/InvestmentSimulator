@@ -32,7 +32,8 @@ Este README explica como fazer:
 ---
 
 ## Estrutura de pastas
-/```
+/
+```
 ├── Dockerfile
 ├── docker-compose.yml
 ├── InvestmentSimulator.Api/
@@ -44,7 +45,8 @@ Este README explica como fazer:
 └── InvestmentSimulator.Web/
     ├── package.json
     ├── angular.json
-    └── src/```
+    └── src/
+```
 
 - **Dockerfile**: multi-stage para build do Angular e .NET 8.0  
 - **docker-compose.yml**: para orquestrar o container único  
