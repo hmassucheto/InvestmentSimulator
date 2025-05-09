@@ -4,13 +4,14 @@ Este projeto simula uma aplicação de CDB com taxa de CDI fixa, retornando o va
 O frontend é feito em Angular e o backend em ASP.NET Core 8, utilizando princípios SOLID e testes unitários.
 
 Variáveis fixas para simulação
- CDI: 0.9% ao mês (0.009)
- TB: 108% (1.08)
- Imposto de Renda:
- Até 6 meses: 22.5%
- Até 12 meses: 20%
- Até 24 meses: 17.5%
- Acima de 24 meses: 15%
+- CDI: 0.9% ao mês (0.009)
+- TB: 108% (1.08)
+
+Imposto de Renda:
+- Até 6 meses: 22.5%
+- Até 12 meses: 20%
+- Até 24 meses: 17.5%
+- Acima de 24 meses: 15%
 
 Este README explica como fazer:
 
