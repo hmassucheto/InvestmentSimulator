@@ -1,0 +1,38 @@
+root = true
+
+[*]
+end_of_line = crlf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.cs]
+# Qualidade de código
+dotnet_diagnostic.S1003.severity = warning  # Remove unused "this" qualifier
+dotnet_diagnostic.S1116.severity = warning  # Empty statements should be removed
+dotnet_diagnostic.S1481.severity = warning  # Remove unused local variables
+dotnet_diagnostic.S1854.severity = warning  # Remove assignments not used
+dotnet_diagnostic.S2094.severity = warning  # Classes should not be empty
+dotnet_diagnostic.S2328.severity = warning  # Use single return statements
+dotnet_diagnostic.S2583.severity = warning  # Condition is always true or false
+dotnet_diagnostic.S2699.severity = warning  # Unit tests should have assertions
+dotnet_diagnostic.S3254.severity = warning  # Don't use default visibility for members
+dotnet_diagnostic.S3923.severity = warning  # Avoid inline out parameters
+
+# Estilo de código (recomendado por Sonar)
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+dotnet_style_qualification_for_method = false:suggestion
+dotnet_style_qualification_for_event = false:suggestion
+
+csharp_new_line_before_open_brace = all:warning
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_elsewhere = false:suggestion
+csharp_style_expression_bodied_methods = true:suggestion
+csharp_style_prefer_switch_expression = true:suggestion
+dotnet_style_var_when_type_is_apparent = true:suggestion
+
+
+[*.ts]
+indent_size = 2
+quote_type = single

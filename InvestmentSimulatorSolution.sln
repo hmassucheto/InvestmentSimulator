@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestmentSimulator.Api", "InvestmentSimulator.Api\InvestmentSimulator.Api.csproj", "{F5CBBD83-7B98-45EB-B559-158D2592D08B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestmentSimulator.Tests", "InvestmentSimulator.Tests\InvestmentSimulator.Tests.csproj", "{10A4DD37-6D1A-4FCE-B673-E8CA8E1EDE4D}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InvestmentSimulator.Web", "InvestmentSimulator.Web\", "{3CA6AB71-41B4-4899-8C97-4B5D82CA8A70}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58264"
+		Debug.AspNetCompiler.PhysicalPath = "InvestmentSimulator.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58264\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58264"
+		Release.AspNetCompiler.PhysicalPath = "InvestmentSimulator.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58264\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58264"
+		SlnRelativePath = "InvestmentSimulator.Web\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B67963E7-8769-4487-970F-CFF473F5DAC3}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+		readme.mk = readme.mk
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestmentSimulator.Domain", "InvestmentSimulator.Domain\InvestmentSimulator.Domain.csproj", "{B4729CF7-C72D-4107-95CC-9E8267799083}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5CBBD83-7B98-45EB-B559-158D2592D08B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CBBD83-7B98-45EB-B559-158D2592D08B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CBBD83-7B98-45EB-B559-158D2592D08B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CBBD83-7B98-45EB-B559-158D2592D08B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A4DD37-6D1A-4FCE-B673-E8CA8E1EDE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A4DD37-6D1A-4FCE-B673-E8CA8E1EDE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A4DD37-6D1A-4FCE-B673-E8CA8E1EDE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A4DD37-6D1A-4FCE-B673-E8CA8E1EDE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA6AB71-41B4-4899-8C97-4B5D82CA8A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA6AB71-41B4-4899-8C97-4B5D82CA8A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA6AB71-41B4-4899-8C97-4B5D82CA8A70}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA6AB71-41B4-4899-8C97-4B5D82CA8A70}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B4729CF7-C72D-4107-95CC-9E8267799083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4729CF7-C72D-4107-95CC-9E8267799083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4729CF7-C72D-4107-95CC-9E8267799083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4729CF7-C72D-4107-95CC-9E8267799083}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A97DF9F8-739C-45D8-A28D-3D18B361731D}
+	EndGlobalSection
+EndGlobal

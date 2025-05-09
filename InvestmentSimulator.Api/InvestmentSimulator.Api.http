@@ -1,0 +1,10 @@
+@hostAddress = http://localhost:5000
+
+POST {{hostAddress}}/api/investments
+Content-Type: application/json
+Accept: application/json
+
+{
+  "initialValue": 1000.00,
+  "months": 12
+}
